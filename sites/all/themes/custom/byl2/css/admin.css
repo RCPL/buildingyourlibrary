@@ -1,0 +1,31 @@
+ul.contextual-links li {
+  position:auto;
+}
+#admin-menu {
+  position:absolute;
+  box-shadow:none;
+}
+
+body.toolbar header, body.admin-menu header{ margin-top: 30px; }
+body.toolbar-drawer header,
+body.admin-menu-with-shortcuts header{ margin-top: 64px; }
+
+.sidebar a.contextual-links-trigger {
+  /*display: none;*/
+  margin: 0;
+  padding: 0 2px;
+  border: none;
+}
+.sidebar .contextual-links a {
+  border: none;
+}
+ul.tabs.primary {
+  background: none;
+}
+ul.tabs.primary li {
+  margin: 0;
+}
+ul.tabs.primary li a {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}

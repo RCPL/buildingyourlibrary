@@ -1,0 +1,43 @@
+.mobile-sidebar h2,
+.sidebar h2 {
+  margin: 10px 0 0 0;
+}
+.mobile-sidebar h3,
+.sidebar h3 {
+  margin: 10px 0;
+}
+#edit-field-branch-target-id-all,
+#edit-field-branch-target-id-31, /* All Locations */
+#edit-field-video-video-url-all,
+#edit-field-video-video-url-1,
+#edit-field-flickr-url-all,
+#edit-field-flickr-url-1,
+#edit-field-event-value-all,
+#edit-field-event-value-1,
+#edit-field-article-files-fid-all,
+#edit-field-article-files-fid-1 {
+  display: none;
+}
+.mobile-sidebar a.active,
+.sidebar a.active {
+  background-image: url(../icons/close.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.item-list {
+  clear: left;
+}
+ul.pager {
+  list-style-type: none;
+}
+.center {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.form-item-field-flickr-url,
+.form-item-field-event-value,
+.form-item-field-article-files-fid,
+.form-item-field-video-video-url {
+  display: none;
+}

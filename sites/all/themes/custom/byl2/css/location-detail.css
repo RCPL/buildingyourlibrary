@@ -1,0 +1,110 @@
+.progress-tracker{
+    width:100%;
+    padding: 20px 0;
+    font-size:66%;
+}
+
+.progress-tracker tbody th{
+    font-weight:400;
+}
+
+.progress-tracker tbody td{
+    height:4em;
+    text-align:center;
+    border-radius:4px;
+    padding:8px;
+}
+
+.progress-tracker .complete img{
+    display:block;
+    margin: 0 auto;
+    height:100%;
+    max-width:50px;
+}
+
+.progress-tracker .complete{
+    background-color:#74e081;
+}
+
+.progress-tracker .in-progress{
+    background-color: #0199BE;
+    color: white;
+}
+.progress-tracker .in-progress:after{
+    content:'in progress';
+}
+
+.progress-tracker .pending{
+    border: solid 2px #eee;
+    color:#ccc;
+}
+.progress-tracker .pending:after{
+    content:'coming soon';
+}
+
+
+@media (min-width: 700px) {
+    .progress-tracker{
+        font-size:100%;
+    }
+    .progress-tracker thead th{
+        font-size:150%;
+    }
+}
+
+#branchHeader{
+    background-size: 100%;
+    background-position: 0 75%;
+    background-size: cover;
+    height:12em;
+    height:25vh;
+    min-height:5.5em;
+    max-height:160px;
+}
+
+#branchHeader h1{
+    position:absolute;
+    bottom:0;
+    margin:10px;
+    padding:0 10px;
+}
+
+/* renderings */
+#floorPlansRenderings img{
+    width:100%;
+    height:auto;
+}
+
+/* floor plans */
+.field-name-field-floor-plans .pdfpreview {
+    float: left;
+    padding: 0 5px 10px 5px;
+    width:50%;
+}
+
+.field-name-field-floor-plans .pdfpreview a{
+    display:block;
+    height:20vh;
+    text-align:center;
+    border:solid 1px #F5F5DC;
+}
+
+.field-name-field-floor-plans .pdfpreview img{
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:100%;
+}
+
+@media (min-width: 700px) {
+    .field-name-field-floor-plans .pdfpreview {
+        width:33.333333333333%;
+    }
+    .field-name-field-floor-plans .pdfpreview a{
+        height:200px;
+}
+
+.field-name-body p,
+.field-name-body ul {
+  padding: 0 0 1em 0;
+}

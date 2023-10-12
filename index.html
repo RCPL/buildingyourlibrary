@@ -1,0 +1,540 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <meta charset="utf-8">
+  <title>Building Your Library</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" index.html>
+  <link rel="shortcut icon" href="/sites/all/themes/custom/byl2/favicon.ico" type="image/vnd.microsoft.icon" index.html>
+  <link type="text/css" rel="stylesheet" href="https://fast.fonts.net/cssapi/9f34263c-33a6-4c32-8c6b-5cd2561367f0.css" index.html>
+  <style type="text/css" media="all">
+  @import url("/modules/system/system.base.css");
+  @import url("/modules/system/system.menus.css");
+  @import url("/modules/system/system.messages.css");
+  @import url("/sites/all/modules/contrib/date/date_api/date.css");
+  @import url("/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css");
+  @import url("/modules/field/theme/field.css");
+  @import url("/sites/all/modules/contrib/extlink/extlink.css");
+  @import url("/sites/all/modules/contrib/search_api_autocomplete/search_api_autocomplete.css");
+  @import url("/sites/all/themes/custom/byl2/css/wildcard.css");
+  @import url("/sites/all/themes/custom/byl2/css/layout.css");
+  @import url("/sites/all/themes/custom/byl2/css/forms.css");
+  @import url("/sites/all/themes/custom/byl2/css/main.css");
+  @import url("/sites/all/themes/custom/byl2/css/overview.css");
+  </style>
+</head>
+<body class="html front not-logged-in no-sidebars page-node" >
+    <header>
+	<div class="page-width cushion-sides">
+
+		<div class="logo">
+			<a href="index.html">
+				<img src="sites/all/themes/custom/byl2/icons/logo.svg">
+			</a>
+		</div>
+
+        <a class="hamburger right" href="javascript:toggleMobileMenu();">
+            <img id="mobileClose" src="sites/all/themes/custom/byl2/icons/close.svg" class="hidden">
+            <img id="mobileOpen"  src="sites/all/themes/custom/byl2/icons/hamburger.svg">
+        </a>
+
+        <div id="mobileMenu" class="desktop">
+            <div class="mobile-scroll">
+                <div class="find-your-library">
+                    <a class="toggle" href="javascript:toggleMenuOptions();">
+                        <img src="sites/all/themes/custom/byl2/icons/menu.svg">
+                        Find Your Library
+                    </a>
+                    <div id="findYourLibrary_menu" class="hidden">
+                        <a class="closest" href="javascript:getNearby();">
+                            Find Nearest <img src="sites/all/themes/custom/byl2/icons/crosshair.svg">
+                        </a>
+                        
+      
+  
+  
+  
+          
+          <a href="locations/ballentine/index.html" id="findYourLibrary_ballentine" class="branch--ballentine"><span>Ballentine</span><span class="distance"></span></a>
+      
+          <a href="locations/blythewood/index.html" id="findYourLibrary_blythewood" class="branch--blythewood"><span>Blythewood</span><span class="distance"></span></a>
+      
+          <a href="locations/cooper/index.html" id="findYourLibrary_cooper" class="branch--cooper"><span>Cooper</span><span class="distance"></span></a>
+      
+          <a href="locations/eastover/index.html" id="findYourLibrary_eastover" class="branch--eastover"><span>Eastover</span><span class="distance"></span></a>
+      
+          <a href="locations/edgewood/index.html" id="findYourLibrary_edgewood" class="branch--edgewood"><span>Edgewood</span><span class="distance"></span></a>
+      
+          <a href="locations/lower-richland/index.html" id="findYourLibrary_lowerrichland" class="branch--lower-richland"><span>Lower Richland</span><span class="distance"></span></a>
+      
+          <a href="locations/main/index.html" id="findYourLibrary_main" class="branch--main"><span>Main</span><span class="distance"></span></a>
+      
+          <a href="locations/north-main/index.html" id="findYourLibrary_northmain" class="branch--north-main"><span>North Main</span><span class="distance"></span></a>
+      
+          <a href="locations/northeast/index.html" id="findYourLibrary_northeast" class="branch--northeast"><span>Northeast</span><span class="distance"></span></a>
+      
+          <a href="locations/sandhills/index.html" id="findYourLibrary_sandhills" class="branch--sandhills"><span>Sandhills</span><span class="distance"></span></a>
+      
+          <a href="locations/southeast/index.html" id="findYourLibrary_southeast" class="branch--southeast"><span>Southeast</span><span class="distance"></span></a>
+      
+          <a href="locations/st-andrews/index.html" id="findYourLibrary_standrews" class="branch--st-andrews"><span>St. Andrews</span><span class="distance"></span></a>
+      
+          <a href="locations/wheatley/index.html" id="findYourLibrary_wheatley" class="branch--wheatley"><span>Wheatley</span><span class="distance"></span></a>
+    
+  
+  
+  
+  
+  
+                    </div>
+                </div>
+
+                <div class="mobile-sidebar mobile">
+                    <h2>On This Page</h2>
+										                                    </div>
+
+                <h2 class="mobile">Main Menu</h2>
+                  <nav class="primary-menu"><span class="first leaf"><a href="news/index.html">News</a></span>
+<span class="leaf"><a href="collaborators/index.html">Collaborators</a></span>
+<span class="leaf"><a href="public-art/index.html">Public Art</a></span>
+<span class="last leaf"><a href="faq/index.html" title="">Questions</a></span>
+</nav>            </div>
+        </div>
+	</div>
+</header>
+<section id="notice" class="cutout-notice" style="background-image:url(../sites/all/themes/custom/byl2/img/index-lightened.jpg)">
+  <div class="page-width flex-layout">
+    <img class="half" src="/sites/all/themes/custom/byl2/icons/about.svg">
+    <div class="half">
+      <div class="three-quarters cushion center">
+        <p>Explore the Richland Library transformation from 2013 to 2019, enhancing facilities and community access.</p>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+<div class="page-width">
+    <section class="headline contextual-links-region">
+      
+      
+  
+  
+  
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+          <article id="headline" style="background-image:url(sites/default/files/styles/top_1_news_item/public/field/image/lower_richland_library_-_front_view_0.jpg">
+  <div id="headlineContent" class="bottom description">
+    
+  <div>        <h1><a href="news/new-library-location-opens-time-winter-break/index.html">New Library Location Opens in Time for Winter Break</a></h1>  </div>  
+          <p>As seen in ColaDaily, Richland Library Lower Richland held a ribbon-cutting ceremony on December 18, 2019. Local residents were able to look around the new building, which transformed from a former medical office into the 13th library location. See the...</p>    
+          <div class="tag branch--lower-richland"><a href="locations/lower-richland/index.html">Lower Richland</a></div>
+    
+                </div>
+</article>
+    </div>
+  
+  
+  
+  
+  
+  
+  </section>
+  
+  <section class="news contextual-links-region">
+    <h2>Updates</h2>
+          
+      
+  
+  
+  
+      
+<div class="auto-columns">
+      <article>
+      
+                            
+  
+                <iframe class="fixed-aspect-ratio" width="100%" height="" src="https://www.youtube.com/embed/ggD1OJhqKss?width%3D100%25%26amp%3Bheight%3D%26amp%3Btheme%3Ddark%26amp%3Bautoplay%3D0%26amp%3Bvq%3Dlarge%26amp%3Brel%3D0%26amp%3Bshowinfo%3D0%26amp%3Bmodestbranding%3D1%26amp%3Biv_load_policy%3D1%26amp%3Bcontrols%3D1%26amp%3Bautohide%3D1%26amp%3Bwmode%3Dopaque" frameborder="0" allowfullscreen></iframe>      
+          
+
+      <div class="cushion">      <a href="news/get-sneak-peek-lower-richland/index.html">      
+  
+                <h2>Get Sneak Peek of Lower Richland</h2>      
+    
+
+      
+  
+                <p>As seen on ABC Columbia, Sonaite Debebe-Kumssa, our Lower Richland location manager, spoke with Good Morning Columbia Anchor Curtis Wilson about the new 13th location. Viewers were able to get a sneak peek of features and enhanced spaces inside the...</p>      
+    
+
+        </a>    
+  
+                <div class="tag branch--lower-richland"><a href="locations/lower-richland/index.html">Lower Richland</a></div>
+      
+    
+    </article>
+      <article>
+      
+                            
+  
+                <iframe class="fixed-aspect-ratio" width="100%" height="" src="https://www.youtube.com/embed/pkD4FNOvhKw?width%3D100%25%26amp%3Bheight%3D%26amp%3Btheme%3Ddark%26amp%3Bautoplay%3D0%26amp%3Bvq%3Dlarge%26amp%3Brel%3D0%26amp%3Bshowinfo%3D0%26amp%3Bmodestbranding%3D1%26amp%3Biv_load_policy%3D1%26amp%3Bcontrols%3D1%26amp%3Bautohide%3D1%26amp%3Bwmode%3Dopaque" frameborder="0" allowfullscreen></iframe>      
+          
+
+      <div class="cushion">      <a href="news/community-celebrates-opening-lower-richland/index.html">      
+  
+                <h2>Community Celebrates Opening of Lower Richland</h2>      
+    
+
+      
+  
+                <p>As seen on WLTX, local residents, partners and elected officials welcomed a new library location to the Lower Richland community on December 18, 2019. The building offers Fresh Picks, Internet access and collaborative spaces. &quot;Residents in this area...</p>      
+    
+
+        </a>    
+  
+                <div class="tag branch--lower-richland"><a href="locations/lower-richland/index.html">Lower Richland</a></div>
+      
+    
+    </article>
+      <article>
+      
+                <a href="news/lower-richland-interior-progress-continues/index.html">                      
+  
+                <img typeof="foaf:Image" src="sites/default/files/styles/news_teaser/public/field/image/10-17_view_from_seating_area-slatwall_0.jpg" index.html>      
+            </a>        
+
+      <div class="cushion">      <a href="news/lower-richland-interior-progress-continues/index.html">      
+  
+                <h2>Lower Richland Interior Progress Continues</h2>      
+    
+
+      
+  
+                <p>Construction crews are making excellent progress on the interior of Lower Richland. Carpet has been installed and lighting fixtures are in place. Here&#039;s a look inside the building on October 17, 2019. </p>      
+    
+
+        </a>    
+  
+                <div class="tag branch--lower-richland"><a href="locations/lower-richland/index.html">Lower Richland</a></div>
+      
+    
+    </article>
+      <article>
+      
+                <a href="news/progress-continues-lower-richland/index.html">                      
+  
+                <img typeof="foaf:Image" src="sites/default/files/styles/news_teaser/public/field/image/photo_from_rear_of_building.jpg" index.html>      
+            </a>        
+
+      <div class="cushion">      <a href="news/progress-continues-lower-richland/index.html">      
+  
+                <h2>Progress Continues at Lower Richland</h2>      
+    
+
+      
+  
+                <p>Crews are continuing to make excellent progress on Lower Richland. Flooring is being installed and painters have added a splash of color.  </p>      
+    
+
+        </a>    
+  
+                <div class="tag branch--lower-richland"><a href="locations/lower-richland/index.html">Lower Richland</a></div>
+      
+    
+    </article>
+  </div>
+  
+  
+  
+  
+  
+  
+          </section>
+</div>
+
+<section id="about" class="cutout" style="background-image:url(sites/all/themes/custom/byl2/img/about.jpg)">
+  <div class="page-width flex-layout">
+    <img class="half" src="sites/all/themes/custom/byl2/icons/about.svg">
+    <div class="half">
+      <div class="three-quarters cushion center">
+        <h2>What's next for your library?</h2>
+        <p>In November 2013, Richland County residents passed a $59 million bond referendum that will enhance library facilities.</p>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+
+<div class="page-width cushion">
+    <section id="ourLocations" class="our-locations">
+        <h1>Our Locations</h1>
+
+      
+  
+  
+  
+      <div class="float-layout">
+        
+          <a class="sixth float-layout" href="locations/ballentine/index.html">
+    
+          <img typeof="foaf:Image" src="sites/default/files/styles/our_locations/public/branch-header-images/ballentine-rendering.jpg" index.html>    
+            <label class="branch--ballentine">Ballentine</label>
+</a>
+          
+          <a class="sixth float-layout" href="locations/blythewood/index.html">
+    
+          <img typeof="foaf:Image" src="sites/default/files/styles/our_locations/public/branch-header-images/blythewood_01_12_2016.jpg" index.html>    
+            <label class="branch--blythewood">Blythewood</label>
+</a>
+          
+          <a class="sixth float-layout" href="locations/cooper/index.html">
+    
+          <img typeof="foaf:Image" src="sites/default/files/styles/our_locations/public/branch-header-images/cooper_exterior_nov_2015.png" index.html>    
+            <label class="branch--cooper">Cooper</label>
+</a>
+          
+          <a class="sixth float-layout" href="locations/eastover/index.html">
+    
+          <img typeof="foaf:Image" src="sites/default/files/styles/our_locations/public/branch-header-images/eo_front_0045_0.jpg" index.html>    
+            <label class="branch--eastover">Eastover</label>
+</a>
+          
+          <a class="sixth float-layout" href="locations/edgewood/index.html">
+    
+          <img typeof="foaf:Image" src="sites/default/files/styles/our_locations/public/branch-header-images/edgewood_header_byl3.jpg" index.html>    
+            <label class="branch--edgewood">Edgewood</label>
+</a>
+          
+          <a class="sixth float-layout" href="locations/lower-richland/index.html">
+    
+          <img typeof="foaf:Image" src="sites/default/files/styles/our_locations/public/branch-header-images/lower_richland_library_-_rear_view_0.jpg" index.html>    
+            <label class="branch--lower-richland">Lower Richland</label>
+</a>
+          
+          <a class="sixth float-layout" href="locations/main/index.html">
+    
+          <img typeof="foaf:Image" src="sites/default/files/styles/our_locations/public/branch-header-images/main_library_march_2013.jpg" index.html>    
+            <label class="branch--main">Main</label>
+</a>
+          
+          <a class="sixth float-layout" href="locations/north-main/index.html">
+    
+          <img typeof="foaf:Image" src="sites/default/files/styles/our_locations/public/branch-header-images/vibrant_cafe_web_original_0.jpg" index.html>    
+            <label class="branch--north-main">North Main</label>
+</a>
+          
+          <a class="sixth float-layout" href="locations/northeast/index.html">
+    
+          <img typeof="foaf:Image" src="sites/default/files/styles/our_locations/public/branch-header-images/2014_northeastext_0069-4.jpg" index.html>    
+            <label class="branch--northeast">Northeast</label>
+</a>
+          
+          <a class="sixth float-layout" href="locations/sandhills/index.html">
+    
+          <img typeof="foaf:Image" src="sites/default/files/styles/our_locations/public/branch-header-images/rich2_rendering_board_0.jpg" index.html>    
+            <label class="branch--sandhills">Sandhills</label>
+</a>
+          
+          <a class="sixth float-layout" href="locations/southeast/index.html">
+    
+          <img typeof="foaf:Image" src="sites/default/files/styles/our_locations/public/branch-header-images/2014_southeastext_0003-3.jpg" index.html>    
+            <label class="branch--southeast">Southeast</label>
+</a>
+          
+          <a class="sixth float-layout" href="locations/st-andrews/index.html">
+    
+          <img typeof="foaf:Image" src="sites/default/files/styles/our_locations/public/branch-header-images/richland_library_st_andrews_photos_by_eric_blake_columbiapics_3_of_37.jpg" index.html>    
+            <label class="branch--st-andrews">St. Andrews</label>
+</a>
+          
+          <a class="sixth float-layout" href="locations/wheatley/index.html">
+    
+          <img typeof="foaf:Image" src="sites/default/files/styles/our_locations/public/branch-header-images/2014_wheatleyext_0011-3.jpg" index.html>    
+            <label class="branch--wheatley">Wheatley</label>
+</a>
+      <div class="clear"></div>
+</div>
+  
+  
+  
+  
+  
+  
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.js'></script>
+     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.css' rel='stylesheet' index.html>
+      <div class="cushion">
+        <div id="map" class="map"></div>
+      </div>
+      <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoibWphcnJlbGwiLCJhIjoiY2o5YTFrNTJ0MHM3YjJ3cGF0b3J5dGc5bCJ9.HHIyNY2-AWA_DzvAJlEwPA';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/light-v9',
+        center: [-81.037160, 34.004625],
+        zoom: 9
+      });
+
+      map.on('load', function () {
+        // Navigation
+        var nav = new mapboxgl.NavigationControl();
+        map.addControl(nav, 'top-left');
+        // Add geolocate control to the map.
+        map.addControl(new mapboxgl.GeolocateControl({
+          positionOptions: {
+            enableHighAccuracy: true
+          },
+          trackUserLocation: true
+        }));
+
+        // Layer of marker points
+        // See: https://www.mapbox.com/mapbox-gl-js/example/geojson-markers/
+        // Images: https://www.mapbox.com/mapbox-gl-js/example/add-image/
+        // Icons: https://www.mapbox.com/maki-icons/, https://github.com/mapbox/mapbox-gl-styles/tree/master/sprites
+        map.loadImage('/sites/all/themes/custom/byl2/img/mapbox/eastover.png', function(error, image) {
+          if (error) throw error;
+          map.addImage('eastover', image);
+        });
+        map.loadImage('/sites/all/themes/custom/byl2/img/mapbox/ballentine.png', function(error, image) {
+          if (error) throw error;
+          map.addImage('ballentine', image);
+        });
+        map.loadImage('/sites/all/themes/custom/byl2/img/mapbox/sandhills.png', function(error, image) {
+          if (error) throw error;
+          map.addImage('sandhills', image);
+        });
+        map.loadImage('/sites/all/themes/custom/byl2/img/mapbox/southeast.png', function(error, image) {
+          if (error) throw error;
+          map.addImage('southeast', image);
+        });
+        map.loadImage('/sites/all/themes/custom/byl2/img/mapbox/wheatley.png', function(error, image) {
+          if (error) throw error;
+          map.addImage('wheatley', image);
+        });
+        map.loadImage('/sites/all/themes/custom/byl2/img/mapbox/northmain.png', function(error, image) {
+          if (error) throw error;
+          map.addImage('northmain', image);
+        });
+        map.loadImage('/sites/all/themes/custom/byl2/img/mapbox/cooper.png', function(error, image) {
+          if (error) throw error;
+          map.addImage('cooper', image);
+        });
+        map.loadImage('/sites/all/themes/custom/byl2/img/mapbox/northeast.png', function(error, image) {
+          if (error) throw error;
+          map.addImage('northeast', image);
+        });
+        map.loadImage('/sites/all/themes/custom/byl2/img/mapbox/edgewood.png', function(error, image) {
+          if (error) throw error;
+          map.addImage('edgewood', image);
+        });
+        map.loadImage('/sites/all/themes/custom/byl2/img/mapbox/standrews.png', function(error, image) {
+          if (error) throw error;
+          map.addImage('standrews', image);
+        });
+        map.loadImage('/sites/all/themes/custom/byl2/img/mapbox/main.png', function(error, image) {
+          if (error) throw error;
+          map.addImage('main', image);
+        });
+        map.loadImage('/sites/all/themes/custom/byl2/img/mapbox/blythewood.png', function(error, image) {
+          if (error) throw error;
+          map.addImage('blythewood', image);
+        });
+        map.loadImage('/sites/all/themes/custom/byl2/img/mapbox/lowerrichland.png', function(error, image) {
+          if (error) throw error;
+          map.addImage('lowerrichland', image);
+        });
+
+        map.addLayer({
+          "id": "points",
+          "type": "symbol",
+          "source": {
+            "type": "geojson",
+            "data": "/sites/all/modules/custom/byl_alterations/geojson-export.json"
+          },
+          "layout": {
+            "icon-image": "{icon}",
+            "icon-allow-overlap": true
+          }
+        });
+      });
+
+      // When a click event occurs on a feature in the points layer, open a popup at the
+      // location of the feature, with description HTML from its properties.
+      map.on('click', 'points', function (e) {
+        new mapboxgl.Popup()
+          .setLngLat(e.features[0].geometry.coordinates)
+          .setHTML('<b>' + e.features[0].properties.name + '</b><br>' + e.features[0].properties.description)
+          .addTo(map);
+      });
+
+      // Change the cursor to a pointer when the mouse is over the points layer.
+      map.on('mouseenter', 'points', function () {
+        map.getCanvas().style.cursor = 'pointer';
+      });
+
+      // Change it back to a pointer when it leaves.
+      map.on('mouseleave', 'points', function () {
+        map.getCanvas().style.cursor = '';
+      });
+      </script>  </section>
+  
+  <section id="infoGraphic" class="infographic">
+    <h1>You're Invited</h1>
+
+      <p class="half">Each one of our locations will go through a multi-year process of design, planning, and construction. Each one of these events along the way will be open to the public so you can watch your library grow.</p>
+      <a class="button center" href="/news?field_event_value=2">See all events</a>
+
+  </section>
+</div>
+
+<footer class="page-width">
+    <aside class="follow-us half">
+		Follow Us
+		<a href="https://twitter.com/accessfreely"><img src="sites/all/themes/custom/byl2/icons/twitter.svg"></a>
+		<a href="https://instagram.com/RichlandLibrary/"><img src="sites/all/themes/custom/byl2/icons/instagram.svg"></a>
+		<a href="https://facebook.com/RichlandLibrary/"><img src="sites/all/themes/custom/byl2/icons/facebook.svg"></a>
+		<a href="https://www.flickr.com/photos/myrcpl/"><img src="sites/all/themes/custom/byl2/icons/flickr.svg"></a>
+	</aside>
+  <aside class="library-branding half">
+    <a href="http://www.richlandlibrary.com">
+      <img src="sites/all/themes/custom/byl2/img/richland-library-logo.png">
+    </a>
+  </aside>
+
+  <div class="clear"></div>
+
+  <p class="copyright" class="text-center">&copy; 2023 Richland Library</p>
+</footer>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='/sites/all/modules/contrib/jquery_update/replace/jquery/1.11/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="misc/jquery-extend-3.4.0.js.v=1.11.2"></script>
+<script type="text/javascript" src="misc/jquery-html-prefilter-3.5.0-backport.js.v=1.11.2"></script>
+<script type="text/javascript" src="misc/jquery.once.js.v=1.2"></script>
+<script type="text/javascript" src="misc/drupal.js"></script>
+<script type="text/javascript" src="misc/form-single-submit.js.v=7.98"></script>
+<script type="text/javascript" src="sites/all/modules/contrib/autoupload/js/autoupload.js"></script>
+<script type="text/javascript" src="sites/all/modules/contrib/extlink/extlink.js"></script>
+<script type="text/javascript" src="misc/autocomplete.js.v=7.98"></script>
+<script type="text/javascript" src="sites/all/modules/contrib/search_api_autocomplete/search_api_autocomplete.js"></script>
+<script type="text/javascript" src="sites/all/modules/contrib/google_analytics/googleanalytics.js"></script>
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-51630230-1"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("config", "UA-51630230-1", {"groups":"default","anonymize_ip":true});
+//--><!]]>
+</script>
+<script type="text/javascript" src="sites/all/themes/custom/byl2/js/headline-aspect-ratio.js"></script>
+<script type="text/javascript" src="sites/all/themes/custom/byl2/js/menu-magic.js"></script>
+<script type="text/javascript" src="sites/all/themes/custom/byl2/js/nearby.js"></script>
+<script type="text/javascript" src="sites/all/themes/custom/byl2/js/fixed-aspect-ratio.js"></script>
+<script type="text/javascript" src="sites/all/themes/custom/byl2/js/masonry.pkgd.js"></script>
+<script type="text/javascript" src="sites/all/themes/custom/byl2/js/auto-columns.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"byl2","theme_token":"6GiQEIyCbSGFS9aanWndDsU0PgQeiTSzMse1f5f5Dq4","js":{"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.11.2\/jquery.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/form-single-submit.js":1,"sites\/all\/modules\/contrib\/autoupload\/js\/autoupload.js":1,"sites\/all\/modules\/contrib\/extlink\/extlink.js":1,"misc\/autocomplete.js":1,"sites\/all\/modules\/contrib\/search_api_autocomplete\/search_api_autocomplete.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"https:\/\/www.googletagmanager.com\/gtag\/js?id=UA-51630230-1":1,"1":1,"sites\/all\/themes\/custom\/byl2\/js\/headline-aspect-ratio.js":1,"sites\/all\/themes\/custom\/byl2\/js\/menu-magic.js":1,"sites\/all\/themes\/custom\/byl2\/js\/nearby.js":1,"sites\/all\/themes\/custom\/byl2\/js\/fixed-aspect-ratio.js":1,"sites\/all\/themes\/custom\/byl2\/js\/masonry.pkgd.js":1,"sites\/all\/themes\/custom\/byl2\/js\/auto-columns.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/extlink\/extlink.css":1,"sites\/all\/modules\/contrib\/search_api_autocomplete\/search_api_autocomplete.css":1,"sites\/all\/themes\/custom\/byl2\/css\/wildcard.css":1,"sites\/all\/themes\/custom\/byl2\/css\/layout.css":1,"sites\/all\/themes\/custom\/byl2\/css\/forms.css":1,"sites\/all\/themes\/custom\/byl2\/css\/main.css":1,"sites\/all\/themes\/custom\/byl2\/css\/overview.css":1}},"better_exposed_filters":{"views":{"news":{"displays":{"block_1":{"filters":[]}}},"top_1_news_item":{"displays":{"block":{"filters":[]}}},"our_locations":{"displays":{"block":{"filters":[]}}},"menu_branches":{"displays":{"embed":{"filters":[]}}}}},"urlIsAjaxTrusted":{"\/search":true},"extlink":{"extTarget":0,"extClass":0,"extLabel":"(link is external)","extImgClass":0,"extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"},"googleanalytics":{"account":["UA-51630230-1"],"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"}});
+//--><!]]>
+</script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+html,body {
+	height:100%;
+}
+
+html[dir="rtl"] body { direction:rtl; }
+
+.page-width {
+	max-width:1230px;
+	margin:0 auto;
+}
+
+.cushion { padding:10px; }
+.cushion-sides { padding: 0 10px; }
+.cushion-ends { padding: 10px 0; }
+
+@media (max-width: 700px) {
+	.cushion { padding:4px; }
+	.cushion-sides { padding: 0 4px; }
+	.cushion-ends { padding: 4px 0; }
+}
+
+.float-layout > * {
+	float:left;
+	width:100%;
+}
+html[dir="rtl"] .float-layout > * { float:right; }
+
+.right { float:right; }
+html[dir="rtl"] .right { float:left; }
+.left { float:left; }
+html[dir="rtl"] .left { float:right; }
+.center{
+	display:block;
+	margin:0 auto;
+}
+
+.full { width:100%; }
+.sixth { width:33.33333333%; }
+
+@media (min-width: 700px) {
+	.half { width:50%; }
+	.third { width:33.33333333%; }
+	.two-thirds { width:66.66666666%; }
+	.quarter { width:25%; }
+	.three-quarters { width:75%; }
+	.fifth { width:20%; }
+	.two-fifths { width:40%; }
+	.three-fifths { width:60%; }
+	.four-fifths { width:80%; }
+	.sixth { width:16.66666666%; }
+	.five-sixths { width:83.33333333%; }
+
+	.offset-quarter{ margin-left: 25% }
+}
+
+.permanent.half { width:50%; }
+.third-max { max-width:33.33333333%; }
+
+.clear { clear:both; float:none; }
+.spacer { height:2em; }
+.mini-spacer { height:0.5em; }
+.hidden { display:none; }
+
+.table-layout { display:table; width:100%; }
+.table-layout > * { display:table-row; }
+.table-layout > * > * { display:table-cell; }
+
+.flex-layout {
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-flex-flow:row wrap;
+	-ms-flex-flow:row wrap;
+	flex-flow:row wrap;
+    align-items: center;
+}
+.flex-layout > * {
+	-ms-flex:auto;
+	-webkit-flex:auto;
+	flex:auto;
+	width:550px;
+}
+
+.auto-columns > *{
+	width:100%;
+	margin-bottom:20px;
+}
+
+@media (min-width: 700px) {
+	.auto-columns > *{
+		width: calc(50% - 25px);
+	}
+}
+
+.text-center{ text-align:center; }
+
+.margin-center{
+  display:block;
+  margin:0 auto;
+}
+
+.transform-center {
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+}
+
+.fixed{
+	position:fixed;
+}
+
+@media (max-width: 700px) {
+	.desktop{ display:none; }
+}
+@media (min-width: 700px) {
+	.mobile{ display:none; }
+}

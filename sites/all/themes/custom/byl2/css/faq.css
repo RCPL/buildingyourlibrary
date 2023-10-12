@@ -1,0 +1,20 @@
+textarea{
+  font-size:150%;
+  font-weight:400;
+  height:7em;
+}
+
+.form-submit{
+  float:right;
+}
+
+.answers a{
+  font-size:140%;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  font-weight:600;
+}
+
+.answers .views-row{
+  margin-bottom:3em;
+}

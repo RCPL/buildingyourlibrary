@@ -1,0 +1,14 @@
+.views-row {
+  margin: 1em 0;
+}
+ul.pager {
+  list-style-type: none;
+}
+.center {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+#webform-client-form-30 {
+  margin: 1em 0;
+}
